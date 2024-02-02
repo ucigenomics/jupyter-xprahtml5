@@ -1,2 +1,2 @@
-graft jupyter_xprahtml5_proxy/icons
-graft jupyter_xprahtml5_proxy/bin
+graft jupyter_xprahtml5/icons
+graft jupyter_xprahtml5/bin
