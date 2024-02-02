@@ -5,19 +5,19 @@ HERE = path.abspath(path.dirname(__file__))
 with open(path.join(HERE, 'README.md'), 'r', encoding = 'utf-8') as fh:
     long_description = fh.read()
 
-version='0.3.5'
+version='0.1.1'
 setup(
     name = 'jupyter-xprahtml5-proxy',
     version = version,
     packages = find_packages(),
 
-    url = 'https://github.com/FZJ-JSC/jupyter-xprahtml5-proxy',
-    download_url = 'https://github.com/FZJ-JSC/jupyter-xprahtml5-proxy/archive/v{0}.tar.gz'.format(version),
+    url = 'https://github.com/ucigenomics/jupyter-xprahtml5',
+    download_url = 'https://github.com/ucigenomics/jupyter-xprahtml5/archive/v{0}.tar.gz'.format(version),
 
-    author = 'Jens Henrik Goebbert',
-    author_email = 'j.goebbert@fz-juelich.de',
+    author = 'Ivan Chang',
+    author_email = 'iychang@uci.edu',
 
-    description = 'Xpra for JupyterLab',
+    description = 'Xpra for HPC Jupyter',
     long_description = long_description,
     long_description_content_type = 'text/markdown',
 
@@ -31,7 +31,7 @@ setup(
 
     entry_points = {
         'jupyter_serverproxy_servers': [
-            'xprahtml5 = jupyter_xprahtml5_proxy:setup_xprahtml5',
+            'xprahtml5 = jupyter_xprahtml5:setup_xprahtml5',
         ]
     },
     python_requires = '>=3.6',
