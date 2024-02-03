@@ -38,8 +38,6 @@ def _xprahtml5_urlparams():
     url_params = '?' + '&'.join([
         'username=' + getuser(),
         'password=' + _xprahtml5_passwd,
-        'encryption=AES',
-        'key=' + _xprahtml5_aeskey,
         'sharing=true',
     ])
 
