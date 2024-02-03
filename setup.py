@@ -7,7 +7,7 @@ with open(path.join(HERE, 'README.md'), 'r', encoding = 'utf-8') as fh:
 
 version='0.1.1'
 setup(
-    name = 'jupyter-xprahtml5-proxy',
+    name = 'jupyter-xprahtml5',
     version = version,
     packages = find_packages(),
 
