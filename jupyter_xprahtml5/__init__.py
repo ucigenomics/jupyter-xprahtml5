@@ -112,7 +112,8 @@ def setup_xprahtml5():
         # '--socket-dir="' + socket_path + '/"',  # fixme: socket_dir not recognized
         # '--server-idle-timeout=86400',  # stop server after 24h with no client connection
         # '--exit-with-client=yes',  # stop Xpra when the browser disconnects
-        '--start=xterm -fa "DejaVu Sans Mono" -fs 14',
+        #'--start=xterm -fa "DejaVu Sans Mono" -fs 14',
+        '--start=xfce4-terminal',
         # '--start-child=xterm', '--exit-with-children',
         '--clipboard-direction=both',
         '--no-keyboard-sync',  # prevent keys from repeating unexpectedly on high latency
